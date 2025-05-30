@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>innovated one</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Open Sans"', "sans-serif"],
+              poppin: ["Poppins", "sans-serif"],
+              inter: ["Inter", "sans-serif"],
+              italian: ["Italiana", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .img-main {
+        position: relative;
+      }
+
+      .main {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        border: 1px solid #f44c4c;
+        top: 11.8%;
+        left: 35.7%;
+        border-radius: 50%;
+        transform: translate(0%, 0%);
+        animation: run 10s infinite linear;
+        display: flex;
+      }
+      @keyframes run {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .main::before {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 15px;
+        height: 15px;
+        content: "";
+        border: 1px solid #f44c4c;
+        border-radius: 50%;
+        background-color: #f44c4c;
+        transform: translate(50%, 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ========================================== Navbar part start========================== -->
+
+    <section
+      id="top-part"
+      class="bg-[url('/images/nav-bannar.png')] h-full bg-no-repeat bg-center bg-cover"
+    >
+      <nav
+        id="navbar"
+        class="container mx-auto flex items-center justify-between py-[30px]"
+      >
+        <div>
+          <a href="#" class="w-full">
+            <img
+              src="./images/nav-Logo.png"
+              alt="images/nav-Logo.png"
+              class=""
+            />
+          </a>
+        </div>
+        <div>
+          <ul class="flex gap-x-8">
+            <li>
+              <a href="#" class="text-sky-50 font-semibold font-sans text-lg"
+                >Home
+                <span class="pl-[12px]"
+                  ><i class="fa-solid fa-chevron-down"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-sky-50 font-semibold font-sans text-lg"
+                >About
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-sky-50 font-semibold font-sans text-lg"
+                >Service
+                <span class="pl-[12px]"
+                  ><i class="fa-solid fa-chevron-down"></i
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-sky-50 font-semibold font-sans text-lg"
+                >Pages
+                <span class="pl-[12px]"
+                  ><i class="fa-solid fa-chevron-down"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-sky-50 font-semibold font-sans text-lg"
+                >News
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex gap-x-10 items-center">
+          <a
+            href="#"
+            class="text-sky-50 inline-block font-semibold font-sans text-lg"
+            >Login</a
+          >
+          <a
+            href="#"
+            class="text-sky-50 inline-block font-semibold font-sans px-[28px] py-[14px] bg-sky-50 text-slate-950 text-lg rounded-md hover:bg-transparent border border-sky-50 hover:border-sky-50"
+          >
+            Free Consultation
+          </a>
+        </div>
+      </nav>
+
+      <div class="container mx-auto py-16">
+        <h1
+          class="font-poppin text-white text-6xl leading-[1.3] w-[644px] font-semibold"
+        >
+          We Provide Premium Consulting Service For your Business
+        </h1>
+        <p class="text-white w-[503px] text-xl font-inter pt-[27px] pb-[45px]">
+          The Premium Consulting Service provides a faster way to process plans,
+          register dealings and create titles.
+        </p>
+        <a
+          href="#"
+          class="font-poppin text-white text-lg uppercase py-[14px] px-[40px] border border-[#FD5F36] rounded-[5px] bg-[#FD5F36] hover:bg-transparent hover:border-white inline-block"
+          >get started now</a
+        >
+
+        <div class="pt-[50px] pb-[72px] flex gap-x-2">
+          <p
+            class="text-white font-inter leading-[30px] text-[20px] font-normal"
+          >
+            Already member of our communty?
+          </p>
+          <a
+            href="#"
+            class="inline-block text-[#52C5B6] font-inter leading-[30px] text-[20px] font-normal"
+            >Sign in</a
+          >
+        </div>
+        <div class="pb-[58px]">
+          <div class="pr-[20px]">
+            <div class="flex relative">
+              <a href="#" class="inline-block w-[4%] absolute top-0 left-0 z-0">
+                <img
+                  src="./images/user-img-3.webp"
+                  alt="images/user_img.jpg"
+                  class="w-full h-[120%] rounded-[100%]"
+                />
+              </a>
+              <a
+                href="#"
+                class="inline-block w-[4%] absolute top-0 left-[35px] z-10"
+              >
+                <img
+                  src="./images/user-img-1.jpg"
+                  alt="images/user_img.jpg"
+                  class="w-full h-[120%] rounded-[100%]"
+                />
+              </a>
+              <a
+                href="#"
+                class="inline-block w-[4%] absolute top-0 left-[70px] z-20"
+              >
+                <img
+                  src="./images/user-img-3.webp"
+                  alt="images/user_img.jpg"
+                  class="w-full h-[120%] rounded-[100%]"
+                />
+              </a>
+              <a
+                href="#"
+                class="inline-block w-[4%] absolute top-0 left-[105px] z-30"
+              >
+                <img
+                  src="./images/user-img-1.jpg "
+                  alt="images/user_img.jpg"
+                  class="w-full h-[120%] rounded-[100%]"
+                />
+              </a>
+              <a
+                href="#"
+                class="inline-block w-[4%] absolute top-0 left-[140px] z-40"
+              >
+                <img
+                  src="./images/user-img-3.webp"
+                  alt="images/user_img.jpg"
+                  class="w-full h-[120%] rounded-[100%]"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="pl-[17%]">
+            <div class="flex items-center">
+              <p
+                class="text-4xl text-[#52C5B6] border-r-4 border-[#4D516F] pr-5 mr-6"
+              >
+                4.5
+              </p>
+              <div>
+                <i class="fa-solid fa-star text-[#FDB400] text-xl"></i>
+                <i class="fa-solid fa-star text-[#FDB400] text-xl"></i>
+                <i class="fa-solid fa-star text-[#FDB400] text-xl"></i>
+                <i class="fa-solid fa-star text-[#FDB400] text-xl"></i>
+                <i class="fa-solid fa-star text-[#FDB400] text-xl"></i>
+              </div>
+            </div>
+            <p
+              class="text-[#ffffff] text-[18px] w-full font-inter font-medium pt-4 leading-6"
+            >
+              305k Total Review
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== Navbar part end============================ -->
+    <!-- ========================================== About part start========================== -->
+    <div class="grid grid-rows container mx-auto py-[130px] bg-[#FAFAFA]">
+      <div class="grid grid-cols-2 gap-[101px] items-center">
+        <div class="w-full">
+          <img
+            src="./images/about-pic.png"
+            alt="/images/about-img.png "
+            class="w-full"
+          />
+        </div>
+        <div class="">
+          <p class="text-[20px] font-semibold text-[#FD5F36] font-poppin">
+            ABOUT US
+          </p>
+          <h2
+            class="font-poppin text-[48px] leading-[62px] text-[#30344E] font-semibold pt-[8px] pb-[23px]"
+          >
+            Welcome to World Best Business Company
+          </h2>
+          <p
+            class="font-inter font-normal text-[#5B5F77] text-[18px] leading-[32px] pb-[26px]"
+          >
+            We partner with experienced and qualified Accountants, Financial
+            Advisors and Chartered Secretaries to provide
+          </p>
+          <p
+            class="text-[18px] font-normal font-inter text-[#30344E] leading-[32px]"
+          >
+            <span
+              class="mr-[12px] py-[3px] px-[5.5px] bg-[#52C5B6] border border-[#52C5B6] rounded rounded-[100%]"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            Monthly assesment report
+          </p>
+          <p
+            class="text-[18px] font-normal font-inter text-[#30344E] leading-[32px] my-[18px]"
+          >
+            <span
+              class="mr-[12px] py-[3px] px-[5.5px] bg-[#52C5B6] border border-[#52C5B6] rounded rounded-[100%]"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            Tax planning consultation
+          </p>
+          <p
+            class="text-[18px] font-normal font-inter text-[#30344E] leading-[32px]"
+          >
+            <span
+              class="mr-[12px] py-[3px] px-[5.5px] bg-[#52C5B6] border border-[#52C5B6] rounded rounded-[100%]"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            Montly rent problem solution
+          </p>
+          <a
+            href="#"
+            class="font-poppin text-white text-lg uppercase py-[14px] px-[40px] border border-[#FD5F36] rounded-[5px] bg-[#FD5F36] hover:bg-transparent hover:border-[#000000] hover:text-[#000000] inline-block mt-[40px]"
+            >Free Consultation</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ========================================== About part end============================ -->
+    <!-- ========================================== service part start========================== -->
+    <div class="grid grid-rows container mx-auto bg-[#FAFAFA]">
+      <div class="grid grid-cols-2 bg-[#FAFAFA]">
+        <div class="pb-[55px]">
+          <p class="text-[20px] font-semibold text-[#FD5F36] font-poppin">
+            Services
+          </p>
+          <h3
+            class="font-poppin text-[48px] font-semibold leading-[62px] text-[#30344E] w-[415px] pt-[9.px]"
+          >
+            Find the service we provide
+          </h3>
+        </div>
+        <div class="text-left pl-[250px]">
+          <p
+            class="text-[18px] text-[#5B5F77] font-inter font-normal w-[538px] leading-[32px]"
+          >
+            Our consultants have years of experience on the in success. ​Through
+            the provision of our services.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto pt-[80px] pb-[150px]">
+      <div class="swiper mySwiper w-full h-[560px] pb-[85px]">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide w-[30%] h-[100%] bg-center bg-cover my-10 py-[70px] px-[35px] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out before:opacity-0 hover:before:opacity-100 before:w-full before:h-[8px] before:bg-[] hover:before:bg-[#F44C4C] bg-[#f44c4c31] rounded rounded-[5px]"
+          >
+            <div class="flex flex-col text-center items-center">
+              <div class="">
+                <img
+                  src="./images/card-1.png"
+                  alt="images/card-1.png"
+                  class="w-[83px] h-[83px] img-main inline-block"
+                />
+                <div class="main inline-block"></div>
+              </div>
+              <h4
+                class="font-poppin text-[20px] font-semibold leading-[28px] text-[#30344E] pt-[46px] pb-[18px] w-[261px]"
+              >
+                Grow Your Brand And Business
+              </h4>
+              <p
+                class="w-[282px] text-[#5B5F77] text-[16px] font-inter font-normal"
+              >
+                That community can of course lend to sales - that's how brand
+                and business go hand-in-hand
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide w-[30%] h-[100%] bg-center bg-cover my-10 py-[70px] px-[35px] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out before:opacity-0 hover:before:opacity-100 before:w-full before:h-[8px] before:bg-[] hover:before:bg-[#52C5B6] bg-[#52c5b648] rounded rounded-[5px]"
+          >
+            <div class="flex flex-col text-center items-center">
+              <div class="">
+                <img
+                  src="./images/card-2.png"
+                  alt="images/card-1.png"
+                  class="w-[83px] h-[83px] img-main inline-block"
+                />
+                <div
+                  class="main inline-block border border-[#52C5B6] before:bg-[#52C5B6] before:boder before:border-[#52C5B6]"
+                ></div>
+              </div>
+              <h4
+                class="font-poppin text-[20px] font-semibold leading-[28px] text-[#30344E] pt-[46px] pb-[18px] w-[261px]"
+              >
+                Increase Your Conversion Rate
+              </h4>
+              <p
+                class="w-[282px] text-[#5B5F77] text-[16px] font-inter font-normal"
+              >
+                There are two ways to increase your conversion rate: increase
+                their motivation and make it easier
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide w-[30%] h-[100%] bg-center bg-cover my-10 py-[70px] px-[35px] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out before:opacity-0 hover:before:opacity-100 before:w-full before:h-[8px] before:bg-[] hover:before:bg-[#2BCCFF] bg-[#0fabda3b] rounded rounded-[5px]"
+          >
+            <div class="flex flex-col text-center items-center">
+              <div class="">
+                <img
+                  src="./images/card-3.png"
+                  alt="images/card-3.png"
+                  class="w-[83px] h-[83px] img-main inline-block"
+                />
+                <div
+                  class="main inline-block border border-[#2BCCFF] before:bg-[#2BCCFF] before:boder before:border-[#2BCCFF]"
+                ></div>
+              </div>
+              <h4
+                class="font-poppin text-[20px] font-semibold leading-[28px] text-[#30344E] pt-[46px] pb-[18px] w-[261px]"
+              >
+                Grow Your Brand And Business
+              </h4>
+              <p
+                class="w-[282px] text-[#5B5F77] text-[16px] font-inter font-normal"
+              >
+                That community can of course lend to sales - that's how brand
+                and business go hand-in-hand
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide w-[30%] h-[100%] bg-center bg-cover my-10 py-[70px] px-[35px] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out before:opacity-0 hover:before:opacity-100 before:w-full before:h-[8px] before:bg-[] hover:before:bg-[#5D5FEF] bg-[#5d5fef48] rounded rounded-[5px]"
+          >
+            <div class="flex flex-col text-center items-center">
+              <div class="">
+                <img
+                  src="./images/card-4.png"
+                  alt="images/card-4.png"
+                  class="w-[83px] h-[83px] img-main inline-block"
+                />
+                <div class="main inline-block border border-[#5D5FEF] before:bg-[#5D5FEF] before:boder before:border-[#5D5FEF]"></div>
+              </div>
+              <h4
+                class="font-poppin text-[20px] font-semibold leading-[28px] text-[#30344E] pt-[46px] pb-[18px] w-[261px]"
+              >
+                Grow Your Brand And Business
+              </h4>
+              <p
+                class="w-[282px] text-[#5B5F77] text-[16px] font-inter font-normal"
+              >
+                That community can of course lend to sales - that's how brand
+                and business go hand-in-hand
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide w-[30%] h-[100%] bg-center bg-cover my-10 py-[70px] px-[35px] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out before:opacity-0 hover:before:opacity-100 before:w-full before:h-[8px] before:bg-[] hover:before:bg-[#F44C4C] bg-[#f44c4c31] rounded rounded-[5px]"
+          >
+            <div class="flex flex-col text-center items-center">
+              <div class="">
+                <img
+                  src="./images/card-1.png"
+                  alt="images/card-1.png"
+                  class="w-[83px] h-[83px] img-main inline-block"
+                />
+                <div class="main inline-block"></div>
+              </div>
+              <h4
+                class="font-poppin text-[20px] font-semibold leading-[28px] text-[#30344E] pt-[46px] pb-[18px] w-[261px]"
+              >
+                Grow Your Brand And Business
+              </h4>
+              <p
+                class="w-[282px] text-[#5B5F77] text-[16px] font-inter font-normal"
+              >
+                That community can of course lend to sales - that's how brand
+                and business go hand-in-hand
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide w-[30%] h-[100%] bg-center bg-cover my-10 py-[70px] px-[35px] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out before:opacity-0 hover:before:opacity-100 before:w-full before:h-[8px] before:bg-[] hover:before:bg-[#52C5B6] bg-[#52c5b648] rounded rounded-[5px]"
+          >
+            <div class="flex flex-col text-center items-center">
+              <div class="">
+                <img
+                  src="./images/card-2.png"
+                  alt="images/card-1.png"
+                  class="w-[83px] h-[83px] img-main inline-block"
+                />
+                <div
+                  class="main inline-block border border-[#52C5B6] before:bg-[#52C5B6] before:boder before:border-[#52C5B6]"
+                ></div>
+              </div>
+              <h4
+                class="font-poppin text-[20px] font-semibold leading-[28px] text-[#30344E] pt-[46px] pb-[18px] w-[261px]"
+              >
+                Increase Your Conversion Rate
+              </h4>
+              <p
+                class="w-[282px] text-[#5B5F77] text-[16px] font-inter font-normal"
+              >
+                There are two ways to increase your conversion rate: increase
+                their motivation and make it easier
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide w-[30%] h-[100%] bg-center bg-cover my-10 py-[70px] px-[35px] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out before:opacity-0 hover:before:opacity-100 before:w-full before:h-[8px] before:bg-[] hover:before:bg-[#2BCCFF] bg-[#0fabda3b] rounded rounded-[5px]"
+          >
+            <div class="flex flex-col text-center items-center">
+              <div class="">
+                <img
+                  src="./images/card-3.png"
+                  alt="images/card-3.png"
+                  class="w-[83px] h-[83px] img-main inline-block"
+                />
+                <div
+                  class="main inline-block border border-[#2BCCFF] before:bg-[#2BCCFF] before:boder before:border-[#2BCCFF]"
+                ></div>
+              </div>
+              <h4
+                class="font-poppin text-[20px] font-semibold leading-[28px] text-[#30344E] pt-[46px] pb-[18px] w-[261px]"
+              >
+                Grow Your Brand And Business
+              </h4>
+              <p
+                class="w-[282px] text-[#5B5F77] text-[16px] font-inter font-normal"
+              >
+                That community can of course lend to sales - that's how brand
+                and business go hand-in-hand
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide w-[30%] h-[100%] bg-center bg-cover my-10 py-[70px] px-[35px] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out before:opacity-0 hover:before:opacity-100 before:w-full before:h-[8px] before:bg-[] hover:before:bg-[#5D5FEF] bg-[#5d5fef48] rounded rounded-[5px]"
+          >
+            <div class="flex flex-col text-center items-center">
+              <div class="">
+                <img
+                  src="./images/card-4.png"
+                  alt="images/card-4.png"
+                  class="w-[83px] h-[83px] img-main inline-block"
+                />
+                <div class="main inline-block border border-[#5D5FEF] before:bg-[#5D5FEF] before:boder before:border-[#5D5FEF]"></div>
+              </div>
+              <h4
+                class="font-poppin text-[20px] font-semibold leading-[28px] text-[#30344E] pt-[46px] pb-[18px] w-[261px]"
+              >
+                Grow Your Brand And Business
+              </h4>
+              <p
+                class="w-[282px] text-[#5B5F77] text-[16px] font-inter font-normal"
+              >
+                That community can of course lend to sales - that's how brand
+                and business go hand-in-hand
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide w-[30%] h-[100%] bg-center bg-cover my-10 py-[70px] px-[35px] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out before:opacity-0 hover:before:opacity-100 before:w-full before:h-[8px] before:bg-[] hover:before:bg-[#F44C4C] bg-[#f44c4c31] rounded rounded-[5px]"
+          >
+            <div class="flex flex-col text-center items-center">
+              <div class="">
+                <img
+                  src="./images/card-1.png"
+                  alt="images/card-1.png"
+                  class="w-[83px] h-[83px] img-main inline-block"
+                />
+                <div class="main inline-block"></div>
+              </div>
+              <h4
+                class="font-poppin text-[20px] font-semibold leading-[28px] text-[#30344E] pt-[46px] pb-[18px] w-[261px]"
+              >
+                Grow Your Brand And Business
+              </h4>
+              <p
+                class="w-[282px] text-[#5B5F77] text-[16px] font-inter font-normal"
+              >
+                That community can of course lend to sales - that's how brand
+                and business go hand-in-hand
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide w-[30%] h-[100%] bg-center bg-cover my-10 py-[70px] px-[35px] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out before:opacity-0 hover:before:opacity-100 before:w-full before:h-[8px] before:bg-[] hover:before:bg-[#52C5B6] bg-[#52c5b648] rounded rounded-[5px]"
+          >
+            <div class="flex flex-col text-center items-center">
+              <div class="">
+                <img
+                  src="./images/card-2.png"
+                  alt="images/card-1.png"
+                  class="w-[83px] h-[83px] img-main inline-block"
+                />
+                <div
+                  class="main inline-block border border-[#52C5B6] before:bg-[#52C5B6] before:boder before:border-[#52C5B6]"
+                ></div>
+              </div>
+              <h4
+                class="font-poppin text-[20px] font-semibold leading-[28px] text-[#30344E] pt-[46px] pb-[18px] w-[261px]"
+              >
+                Increase Your Conversion Rate
+              </h4>
+              <p
+                class="w-[282px] text-[#5B5F77] text-[16px] font-inter font-normal"
+              >
+                There are two ways to increase your conversion rate: increase
+                their motivation and make it easier
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide w-[30%] h-[100%] bg-center bg-cover my-10 py-[70px] px-[35px] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out before:opacity-0 hover:before:opacity-100 before:w-full before:h-[8px] before:bg-[] hover:before:bg-[#2BCCFF] bg-[#0fabda3b] rounded rounded-[5px]"
+          >
+            <div class="flex flex-col text-center items-center">
+              <div class="">
+                <img
+                  src="./images/card-3.png"
+                  alt="images/card-3.png"
+                  class="w-[83px] h-[83px] img-main inline-block"
+                />
+                <div
+                  class="main inline-block border border-[#2BCCFF] before:bg-[#2BCCFF] before:boder before:border-[#2BCCFF]"
+                ></div>
+              </div>
+              <h4
+                class="font-poppin text-[20px] font-semibold leading-[28px] text-[#30344E] pt-[46px] pb-[18px] w-[261px]"
+              >
+                Grow Your Brand And Business
+              </h4>
+              <p
+                class="w-[282px] text-[#5B5F77] text-[16px] font-inter font-normal"
+              >
+                That community can of course lend to sales - that's how brand
+                and business go hand-in-hand
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide w-[30%] h-[100%] bg-center bg-cover my-10 py-[70px] px-[35px] relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:transition-all before:duration-300 before:ease-in-out before:opacity-0 hover:before:opacity-100 before:w-full before:h-[8px] before:bg-[] hover:before:bg-[#5D5FEF] bg-[#5d5fef48] rounded rounded-[5px]"
+          >
+            <div class="flex flex-col text-center items-center">
+              <div class="">
+                <img
+                  src="./images/card-4.png"
+                  alt="images/card-4.png"
+                  class="w-[83px] h-[83px] img-main inline-block"
+                />
+                <div class="main inline-block border border-[#5D5FEF] before:bg-[#5D5FEF] before:boder before:border-[#5D5FEF]"></div>
+              </div>
+              <h4
+                class="font-poppin text-[20px] font-semibold leading-[28px] text-[#30344E] pt-[46px] pb-[18px] w-[261px]"
+              >
+                Grow Your Brand And Business
+              </h4>
+              <p
+                class="w-[282px] text-[#5B5F77] text-[16px] font-inter font-normal"
+              >
+                That community can of course lend to sales - that's how brand
+                and business go hand-in-hand
+              </p>
+            </div>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- ========================================== service part end============================ -->
+    <!-- ========================================== Navbar part start========================== -->
+    <!-- ========================================== Navbar part end============================ -->
+    <!-- ========================================== Navbar part start========================== -->
+    <!-- ========================================== Navbar part end============================ -->
+    <!-- ========================================== Navbar part start========================== -->
+    <!-- ========================================== Navbar part end============================ -->
+    <!-- ========================================== Navbar part start========================== -->
+    <!-- ========================================== Navbar part end============================ -->
+    <!-- ========================================== Navbar part start========================== -->
+    <!-- ========================================== Navbar part end============================ -->
+    <!-- ========================================== Navbar part start========================== -->
+    <!-- ========================================== Navbar part end============================ -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
